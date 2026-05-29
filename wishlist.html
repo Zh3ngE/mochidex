@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>My Wishlist</h2>
+
+<!-- Search -->
+<div class="mb-3">
+    <input 
+        type="text" 
+        id="wishlistSearch" 
+        class="form-control" 
+        placeholder="Search and add cards..."
+    >
+</div>
+
+<!-- Search results -->
+<div id="wishlistSearchResults"></div>
+
+<!-- Wishlist items -->
+<div id="wishlistGroups"></div>
+
+{% endblock %}

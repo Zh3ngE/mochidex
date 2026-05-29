@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+
+    <!-- HEADER -->
+
+    <header class="binder-header">
+
+        <h2>MochiDex</h2>
+
+        <div class="layout-controls">
+            <select id="gridSize" class="form-select">
+                <option value="4">2x2</option>
+                <option value="9">3x3</option>
+                <option value="12">3x4</option>
+                <option value="16">4x4</option>
+            </select>
+        </div>
+
+    </header>
+
+    <!-- GRID -->
+
+    <div class="binder-page">
+        <div id="cardGrid" class="card-grid grid-4"></div>
+    </div>
+
+    <!-- NAV -->
+
+    <div class="binder-navigation">
+        <button id="prevPage">&lt; Prev</button>
+        <span id="pageIndicator">Page 1/1</span>
+        <button id="nextPage">Next &gt;</button>
+    </div>
+
+    <!-- ACTIONS -->
+
+    <div class="action-buttons">
+        <button id="saveButton">Save</button>
+        <button id="shareButton">Share</button>
+    </div>
+
+</div>
+
+<!-- CARD MODAL (KEEP) -->
+
+<div class="modal fade" id="cardModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5>Card Details</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <img class="card-detail-image">
+                <h3 class="card-name"></h3>
+                <p class="card-set"></p>
+                <p class="card-number"></p>
+                <p class="card-price"></p>
+            </div>
+
+            <div class="modal-footer">
+                <button id="addToWishlist">Wishlist</button>
+                <button id="addToFavorites">Favorite</button>
+                <button id="removeCard">Remove</button>
+                <button data-bs-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- ADD CARD MODAL (KEEP) -->
+ 
+<div class="modal fade" id="addCardModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5>Add Card</h5>
+            </div>
+
+            <div class="modal-body">
+
+                <input id="searchCard" placeholder="Search cards...">
+
+                <div id="searchResults"></div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
