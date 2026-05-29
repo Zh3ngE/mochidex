@@ -1,4 +1,5 @@
-Virtual trading card binder
+Virtual trading card binder with card market values
+
 IMPORTANT : This only contains skeletons, I have fully removed my custom color palette/ backgrounds & bunny mascot. Feel free to format style.css to your preferences
 
 Backend:
