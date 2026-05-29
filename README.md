@@ -1,6 +1,6 @@
 Virtual trading card binder with card market values
 
-IMPORTANT : This only contains skeletons, I have fully removed my custom color palette/ backgrounds & bunny mascot. Feel free to format style.css to your preferences
+IMPORTANT : This only contains skeleton, I have fully removed my custom color palette/ assets/ animations. Feel free to format to your preferences
 
 Backend:
 - Flask
